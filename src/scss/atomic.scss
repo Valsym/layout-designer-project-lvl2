@@ -1,0 +1,40 @@
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.w-15 {
+  width: 15px;
+}

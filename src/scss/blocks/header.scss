@@ -1,0 +1,132 @@
+.header {
+  position: relative;
+
+  padding: 200px 120px;
+
+  text-align: center;
+}
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-flex {
+  position: absolute;
+  top: 25px;
+  right: 120px;
+  left: 120px;
+
+  display: flex;
+
+  /* align-content: center; */
+  align-items: center;
+
+  /* width: 100%; */
+  height: 25px;
+
+  font: 11px/16.5px "Roboto", sans-serif;
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+
+.logo-img {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+.logo-text {
+  color: $white;
+}
+
+.ul-flex {
+  display: flex;
+  align-content: center;
+}
+
+nav {
+  ul {
+    list-style: none;
+
+    li {
+      margin-right: 24px;
+    }
+
+    li a {
+      color: $grey;
+      text-decoration: none;
+    }
+  }
+}
+
+.activ a {
+  color: $white;
+}
+
+.find {
+  display: flex;
+  align-items: center;
+  min-width: 248px;
+  height: 25px;
+
+  /* padding-top: 5px; */
+  padding-left: 10px;
+
+  border-radius: 50px;
+
+  color: $darkGrey;
+
+  text-align: left;
+
+  background: $darkDarkGrey;
+}
+
+.form {
+  max-width: 570px;
+
+  color: $white;
+  font: 16px/24px "Roboto", sans-serif;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.form-input {
+  box-sizing: border-box;
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  border: 2px solid $grey;
+  border-radius: 3px;
+
+  color: $white;
+
+  background: transparent;
+}
+
+.btn {
+  width: 570px;
+  padding: 20px 30px;
+  border-radius: 5px;
+
+  color: $white;
+  font: 13px/15px "Roboto", sans-serif;
+}
+
+.btn-green {
+  background: $green;
+}
+
+input::placeholder {
+  color: $white;
+  font: 14px/16.4px "Roboto Bold", sans-serif;
+}
