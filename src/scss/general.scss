@@ -23,17 +23,22 @@
 html {
   /* overflow-x: hidden;
 overflow-y: scroll; */
+  color: $grey;
+  font: 18px/1.5em "Roboto", sans-serif;
+
+  background: $dark;
 }
 
 body {
   max-width: 1200px;
   margin: 0;
   padding: 0;
+}
 
-  color: $grey;
-  font: 18px/1.5em "Roboto", sans-serif;
-
-  background: $dark;
+@media screen and (max-width: 599px) {
+  body {
+    width: 100%;
+  }
 }
 
 h1,

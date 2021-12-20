@@ -1,9 +1,17 @@
 .header {
   position: relative;
 
+  max-width: 1200px;
+
   padding: 200px 120px;
 
   text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    padding: 200px 20px;
+  }
 }
 
 .banner {
@@ -19,12 +27,13 @@
   left: 120px;
 
   display: flex;
+  flex-wrap: wrap;
 
-  /* align-content: center; */
+  align-content: center;
   align-items: center;
 
-  /* width: 100%; */
-  height: 25px;
+  /* width: 100%;
+  height: 25px; */
 
   font: 11px/16.5px "Roboto", sans-serif;
 }
@@ -33,7 +42,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 90px;
+
+  /* margin-right: 90px; */
 }
 
 .logo-img {
@@ -44,15 +54,19 @@
 
 .logo-text {
   color: $white;
+  text-transform: uppercase;
 }
 
 .ul-flex {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
 }
 
 nav {
   ul {
+    text-transform: uppercase;
+
     list-style: none;
 
     li {
@@ -73,10 +87,12 @@ nav {
 .find {
   display: flex;
   align-items: center;
-  min-width: 248px;
+  width: 100%;
+  min-width: 50px;
+  max-width: 248px;
   height: 25px;
 
-  /* padding-top: 5px; */
+  padding-right: 10px;
   padding-left: 10px;
 
   border-radius: 50px;
@@ -84,6 +100,7 @@ nav {
   color: $darkGrey;
 
   text-align: left;
+  text-transform: uppercase;
 
   background: $darkDarkGrey;
 }
@@ -114,12 +131,15 @@ nav {
 }
 
 .btn {
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
   padding: 20px 30px;
+  border: none;
   border-radius: 5px;
 
   color: $white;
   font: 13px/15px "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 .btn-green {
@@ -129,4 +149,49 @@ nav {
 input::placeholder {
   color: $white;
   font: 14px/16.4px "Roboto Bold", sans-serif;
+}
+
+@media screen and (max-width: 599px) {
+  .header-flex {
+    right: 25px;
+    left: 25px;
+
+    /* padding-right: 25px;
+    padding-left: 25px; */
+  }
+
+  .logo-flex {
+    width: 100%;
+  }
+
+  .logo-text {
+    margin-right: auto;
+  }
+
+  .ul-flex {
+    display: block;
+    padding-inline-start: 0;
+
+    text-align: left;
+  }
+
+  .find {
+    max-width: unset;
+  }
+
+  .form-flex {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    margin-right: 0;
+  }
+
+  .form-input {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .mr-24 {
+    margin-right: 0;
+  }
 }
