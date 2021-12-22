@@ -16,8 +16,6 @@
 
 .banner {
   background-image: url("../images/banner.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .header-flex {
@@ -128,22 +126,6 @@ nav {
   color: $white;
 
   background: transparent;
-}
-
-.btn {
-  width: 100%;
-  max-width: 570px;
-  padding: 20px 30px;
-  border: none;
-  border-radius: 5px;
-
-  color: $white;
-  font: 13px/15px "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-.btn-green {
-  background: $green;
 }
 
 input::placeholder {

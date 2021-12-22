@@ -30,50 +30,94 @@ overflow-y: scroll; */
 }
 
 body {
-  max-width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 599px) {
-  body {
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and (max-width: 599px) {
     width: 100%;
   }
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   padding: 0;
 
   color: $white;
+
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 600px) {
   h1 {
     font: 60px/90px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
   }
 
   h2 {
     font: 38px/57px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
+  }
+
+  h3 {
+    font: normal 24px/36px "Roboto", sans-serif;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 599px) {
   h1 {
     font: 30px/45px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
   }
 
   h2 {
     font: 18px/27px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
   }
+
+  h3 {
+    font: 16px/24px "Roboto Bold", sans-serif;
+  }
+}
+
+.bg-img {
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+.btn {
+  width: 100%;
+  max-width: 570px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+
+  color: $white;
+  font: 13px/15px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-green {
+  background: $green;
+}
+
+.btn-trans {
+  background: transparent;
 }

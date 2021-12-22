@@ -26,48 +26,91 @@ html {
 }
 
 body {
-  max-width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 @media screen and (max-width: 599px) {
-  body {
+  .content {
     width: 100%;
   }
 }
+
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   padding: 0;
   color: #fff;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 600px) {
   h1 {
     font: 60px/90px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
   }
 
   h2 {
     font: 38px/57px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
+  }
+
+  h3 {
+    font: normal 24px/36px "Roboto", sans-serif;
+    text-align: center;
   }
 }
 @media screen and (max-width: 599px) {
   h1 {
     font: 30px/45px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
   }
 
   h2 {
     font: 18px/27px "Roboto Bold", sans-serif;
-    text-transform: uppercase;
+  }
+
+  h3 {
+    font: 16px/24px "Roboto Bold", sans-serif;
   }
 }
+.bg-img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 p {
   margin: 0;
   padding: 0;
+}
+
+.btn {
+  width: 100%;
+  max-width: 570px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font: 13px/15px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-green {
+  background: #34c176;
+}
+
+.btn-trans {
+  background: transparent;
 }
 
 .sr-only {
@@ -96,6 +139,10 @@ p {
   margin-right: 24px;
 }
 
+.mr-50 {
+  margin-right: 50px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -108,7 +155,15 @@ p {
   width: 15px;
 }
 
-/* HEADER */
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+/* blocks */
 .header {
   position: relative;
   max-width: 1200px;
@@ -123,8 +178,6 @@ p {
 }
 .banner {
   background-image: url("../images/banner.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .header-flex {
@@ -219,21 +272,6 @@ nav ul li a {
   background: transparent;
 }
 
-.btn {
-  width: 100%;
-  max-width: 570px;
-  padding: 20px 30px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font: 13px/15px "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-.btn-green {
-  background: #34c176;
-}
-
 input::placeholder {
   color: #fff;
   font: 14px/16.4px "Roboto Bold", sans-serif;
@@ -279,6 +317,101 @@ input::placeholder {
 
   .mr-24 {
     margin-right: 0;
+  }
+}
+#page-pricing {
+  max-width: 1200px;
+  padding-top: 100px;
+  color: #fff;
+  background: #08020d;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 599px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.pricing-item {
+  min-width: 247px;
+  max-width: 371px;
+  /* height: 615px; */
+  padding-top: 24px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 599px) {
+  .pricing-item {
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.price-flex {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.card-h3 {
+  text-align: center;
+}
+
+.subscribe_1 {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.subscribe_2 {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.subscribe_3 {
+  background-image: url("../images/subscribe_3.png");
+}
+
+.pricing-value {
+  position: relative;
+  font: normal 64px/1em "Roboto", sans-serif;
+  /* text-align: center; */
+}
+
+.rub {
+  /* position: absolute; */
+  margin-left: 16px;
+  font: normal 32px/48px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-card {
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font: normal 16px/24px "Roboto", sans-serif;
+}
+
+.pricing-footer {
+  margin: 64px 0;
+  font: normal 13px/19px "Roboto", sans-serif;
+  /* text-align: center; */
+}
+
+.text-pricing-footer {
+  margin-top: 43px;
+  font: normal 16px/24px "Roboto", sans-serif;
+}
+@media screen and (max-width: 599px) {
+  .text-pricing-footer {
+    margin-top: 16px;
   }
 }
 
