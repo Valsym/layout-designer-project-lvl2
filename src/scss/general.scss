@@ -44,7 +44,7 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: $breakpoint) {
     width: 100%;
   }
 }
@@ -75,7 +75,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: $breakpoint) {
   h1 {
     font: 30px/45px "Roboto Bold", sans-serif;
   }

@@ -40,7 +40,7 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 414px) {
   .content {
     width: 100%;
   }
@@ -69,7 +69,7 @@ h3 {
     text-align: center;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 414px) {
   h1 {
     font: 30px/45px "Roboto Bold", sans-serif;
   }
@@ -159,8 +159,28 @@ p {
   margin-bottom: 45px;
 }
 
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 .mb-64 {
   margin-bottom: 64px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.pt-18 {
+  padding-top: 18px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .ta-center {
@@ -177,6 +197,40 @@ p {
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.btn-red {
+  background: #95390c;
+}
+
+.app-flex {
+  display: flex;
+  flex-direction: row;
+}
+.app-flex img {
+  width: 333px;
+  height: 278px;
+}
+@media screen and (max-width: 414px) {
+  .app-flex {
+    flex-direction: column-reverse;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.font-1624 {
+  font: normal 16px/24px "Roboto", sans-serif;
+}
+
+.app-btn {
+  width: 131px;
+  padding: 16px 40px;
+  border-radius: 32px;
+  color: #fff;
+  font-size: 12.8px;
 }
 
 /* blocks */
