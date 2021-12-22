@@ -47,6 +47,22 @@
   margin-bottom: 45px;
 }
 
+.mb-64 {
+  margin-bottom: 64px;
+}
+
 .ta-center {
   text-align: center;
+}
+
+.orange {
+  color: $orange;
+}
+
+.grey {
+  color: $grey;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
