@@ -1,3 +1,136 @@
-.footer {
-  margin: 0;
+footer {
+  margin-top: 100px;
+
+  @include bg-gradient($violet, $red);
+
+  color: $light;
+
+  & .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 73px;
+
+    @media screen and (max-width: $breakpoint) {
+      flex-direction: column;
+
+      /* h2 {
+        :not(:first-child)
+        margin-top: 30px;
+      } */
+    }
+
+    .footer-up-item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 270px;
+
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        color: $white;
+
+        font: bold 18px/27px "Roboto Bold", sans-serif;
+        text-transform: uppercase;
+      }
+
+      a,
+      p {
+        color: $light;
+        font: normal 16px/24px "Roboto", sans-serif;
+        text-decoration: none;
+      }
+    }
+
+    .footer-icon {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      max-width: 270px;
+    }
+  }
+
+  hr {
+    border: 1px solid $grey;
+  }
+
+  & .footer-down {
+    margin-right: 16px;
+    padding: 40px 0 50px;
+
+    color: $light;
+
+    ul {
+      display: flex;
+      padding-left: 0;
+
+      @media screen and (max-width: $breakpoint) {
+        flex-direction: column;
+      }
+    }
+
+    ul > li {
+      list-style: none;
+    }
+
+    ul > li:not(:last-child) {
+      margin-right: 16px;
+
+      @media screen and (max-width: $breakpoint) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+
+  /* width: 25px;
+	height: 25px; */
+  padding: 0;
+
+  border: none;
+
+  background-color: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.icon-google-plus {
+  width: 26px;
+  height: 17px;
+  margin-right: 24px;
+
+  background-image: url(../images/Google+.png);
+}
+
+.icon-twitter {
+  width: 22px;
+  height: 19px;
+  margin-right: 24px;
+
+  background-image: url(../images/Twitter.png);
+}
+
+.icon-facebook {
+  width: 12px;
+  height: 20px;
+  margin-right: 24px;
+
+  background-image: url(../images/Facebook.png);
+}
+
+.icon-instagram {
+  width: 19px;
+  height: 20px;
+
+  background-image: url(../images/Instagram.png);
 }

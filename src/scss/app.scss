@@ -1,8 +1,35 @@
-@import 'variables';
-@import 'general';
-@import 'atomic';
+@import "variables";
+@import "general";
+@import "atomic";
 
 /* blocks */
-@import 'blocks/header';
-@import 'blocks/page-pricing';
-@import 'blocks/page-news';
+@import "blocks/header";
+@import "blocks/page-pricing";
+@import "blocks/page-news";
+
+/* no components */
+@import "blocks/footer";
+
+/* page-app */
+.app-flex {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 333px;
+    height: 278px;
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column-reverse;
+  }
+}
+
+.app-btn {
+  width: 131px;
+  padding: 16px 40px;
+  border-radius: 32px;
+
+  color: $white;
+  font-size: 12.8px;
+}

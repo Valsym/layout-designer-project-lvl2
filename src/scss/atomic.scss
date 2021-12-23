@@ -91,20 +91,6 @@
   background: $red;
 }
 
-.app-flex {
-  display: flex;
-  flex-direction: row;
-
-  img {
-    width: 333px;
-    height: 278px;
-  }
-
-  @media screen and (max-width: $breakpoint) {
-    flex-direction: column-reverse;
-  }
-}
-
 .space-between {
   justify-content: space-between;
 }
@@ -113,11 +99,6 @@
   font: normal 16px/24px "Roboto", sans-serif;
 }
 
-.app-btn {
-  width: 131px;
-  padding: 16px 40px;
-  border-radius: 32px;
-
-  color: $white;
-  font-size: 12.8px;
+@mixin bg-gradient($color1, $color2) {
+  background: linear-gradient(89.75deg, $color1 32.83%, $color2 81.56%);
 }
