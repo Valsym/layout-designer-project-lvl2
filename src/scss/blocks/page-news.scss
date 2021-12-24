@@ -6,9 +6,13 @@
 
   background: $dark;
 
+  h2 {
+    font-weight: 700;
+  }
+
   @media screen and (max-width: $breakpoint) {
     h2 {
-      font: normal 18px/27px "Roboto Bold", sans-serif;
+      font: bold 18px/27px "Roboto Bold", sans-serif;
     }
   }
 }

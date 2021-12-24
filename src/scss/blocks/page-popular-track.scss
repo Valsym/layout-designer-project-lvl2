@@ -5,6 +5,10 @@
   color: $white;
 
   background: $dark;
+
+  h2 {
+    font-weight: 700;
+  }
 }
 
 .treck-columns {
@@ -65,5 +69,7 @@
   h3 {
     color: $white;
     font: bold 12.8px/19.2px "Roboto Bold", sans-serif;
+
+    /* text-transform: capitalize; */
   }
 }
