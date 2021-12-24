@@ -690,6 +690,51 @@ input::placeholder {
   font: bold 12.8px/19.2px "Roboto Bold", sans-serif;
 }
 
+@media screen and (max-width: 414px) {
+  #page-discography h2 {
+    font: bold 18px/27px "Roboto Bold", sans-serif;
+  }
+}
+
+.discography-four-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.discography-two-items {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.discography-two-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.discography-item img {
+  width: 250px;
+  height: 250px;
+}
+@media screen and (max-width: 414px) {
+  .discography-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.discography-item h3 {
+  font: bold 18px/27px "Roboto Bold", sans-serif;
+  text-align: left;
+}
+.discography-item p {
+  color: #e0e0e0;
+  font: normal 16px/24px "Roboto", sans-serif;
+  text-align: left;
+}
+.discography-item:not(:last-child) {
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
 /* no components */
 footer {
   margin-top: 100px;
