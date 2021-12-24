@@ -18,6 +18,10 @@
   background-image: url("../images/banner.png");
 }
 
+.arttist-banner {
+  background-image: url("../images/Morten Harket.png");
+}
+
 .header-flex {
   position: absolute;
   top: 25px;
@@ -176,4 +180,34 @@ input::placeholder {
   .mr-24 {
     margin-right: 0;
   }
+}
+
+.art-button-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  /* padding-bottom: 223px; */
+}
+
+.art-icon {
+  width: 20px;
+  height: 20px;
+
+  filter: brightness(0) invert(1);
+}
+
+.art-desc-h1 {
+  /* margin-top: 250px; */
+  margin-bottom: 16px;
+
+  text-align: left;
+}
+
+.art-desc-p {
+  margin-bottom: 48px;
+
+  font: normal 16px/24px "Roboto", sans-serif;
+
+  text-align: left;
 }

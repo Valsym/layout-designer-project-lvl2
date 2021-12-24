@@ -23,12 +23,20 @@
   margin-right: 15px;
 }
 
+.ml-16 {
+  margin-left: 16px;
+}
+
 .mr-24 {
   margin-right: 24px;
 }
 
 .mr-50 {
   margin-right: 50px;
+}
+
+.mr-15rem {
+  margin-right: 1.5rem;
 }
 
 .ml-auto {
@@ -63,6 +71,10 @@
   margin-bottom: 16px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .pt-18 {
   padding-top: 18px;
 }
@@ -87,8 +99,20 @@
   flex-direction: row-reverse;
 }
 
+.btn-green {
+  background: $green;
+}
+
+.btn-trans {
+  background: transparent;
+}
+
 .btn-red {
   background: $red;
+}
+
+.btn-purple {
+  background: $purple;
 }
 
 .space-between {
