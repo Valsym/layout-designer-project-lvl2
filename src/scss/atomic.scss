@@ -126,3 +126,15 @@
 @mixin bg-gradient($color1, $color2) {
   background: linear-gradient(89.75deg, $color1 32.83%, $color2 81.56%);
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-size-12-8 {
+  font-size: 12.8px;
+}

@@ -238,6 +238,18 @@ p {
   font: normal 16px/24px "Roboto", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-size-12-8 {
+  font-size: 12.8px;
+}
+
 /* blocks */
 .header {
   position: relative;
@@ -611,6 +623,71 @@ input::placeholder {
 .ava {
   width: 19px;
   height: 19px;
+}
+
+#page-popular-track {
+  max-width: 1200px;
+  padding-top: 100px;
+  color: #fff;
+  background: #08020d;
+}
+
+.treck-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.container-popular-track {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 414px) {
+  .container-popular-track {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.container-popular-track:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.popular-track {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e0e0e0;
+  font: normal 12.8px/19.2px "Roboto", sans-serif;
+}
+.popular-track img {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 414px) {
+  .popular-track {
+    margin-right: 0;
+  }
+  .popular-track:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.track-info h3 {
+  color: #fff;
+  font: bold 12.8px/19.2px "Roboto Bold", sans-serif;
 }
 
 /* no components */
