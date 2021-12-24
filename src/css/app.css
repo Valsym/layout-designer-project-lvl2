@@ -735,6 +735,54 @@ input::placeholder {
   margin-bottom: 25px;
 }
 
+#page-similar {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 414px) {
+  #page-similar h2 {
+    font: bold 18px/27px "Roboto Bold", sans-serif;
+  }
+}
+
+.similar-four-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.similar-two-items {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.similar-two-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.similar-item img {
+  width: 250px;
+  height: 250px;
+}
+@media screen and (max-width: 414px) {
+  .similar-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.similar-item h3 {
+  font: bold 18px/27px "Roboto Bold", sans-serif;
+  text-align: center;
+}
+.similar-item p {
+  color: #e0e0e0;
+  font: normal 16px/24px "Roboto", sans-serif;
+  text-align: center;
+}
+.similar-item:not(:last-child) {
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
 /* no components */
 footer {
   margin-top: 100px;
