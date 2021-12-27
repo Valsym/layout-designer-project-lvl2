@@ -1,0 +1,163 @@
+#page-description {
+  /* position: relative;
+  max-width: 1200px; */
+
+  padding: 200px 0;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: 31px;
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    padding: 200px 20px;
+
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.banner {
+  height: 750px;
+
+  background-image: url("../images/banner.png");
+}
+
+.arttist-banner {
+  background-image: url("../images/Morten Harket.png");
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+
+  /* max-width: 570px; */
+
+  color: $white;
+  font: 16px/24px "Roboto", sans-serif;
+}
+
+.form-div {
+  max-width: 570px;
+
+  p {
+    margin-bottom: 16px;
+  }
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+
+  input {
+    margin-bottom: 24px;
+  }
+
+  input:first-child {
+    margin-right: 24px;
+  }
+
+  input::placeholder {
+    color: $white;
+    font: 14px/16.4px "Roboto Bold", sans-serif;
+  }
+}
+
+.form-input {
+  box-sizing: border-box;
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  border: 2px solid $grey;
+  border-radius: 3px;
+
+  color: $white;
+
+  background: transparent;
+
+  /*  &::placeholder {
+    color: $white;
+    font: 14px/16.4px "Roboto Bold", sans-serif;
+  } */
+}
+
+/* input::placeholder {
+  color: $white;
+  font: 14px/16.4px "Roboto Bold", sans-serif;
+} */
+
+@media screen and (max-width: $breakpoint) {
+  .header-flex {
+    right: 25px;
+    left: 25px;
+  }
+
+  .logo-flex {
+    width: 100%;
+  }
+
+  .logo-text {
+    margin-right: auto;
+  }
+
+  .ul-flex {
+    display: block;
+    padding-inline-start: 0;
+
+    text-align: left;
+  }
+
+  .find {
+    max-width: unset;
+  }
+
+  .form-flex {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    margin-right: 0;
+  }
+
+  .form-input {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .mr-24 {
+    margin-right: 0;
+  }
+}
+
+.art-button-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  /* padding-bottom: 223px; */
+}
+
+.art-icon {
+  width: 20px;
+  height: 20px;
+
+  filter: brightness(0) invert(1);
+}
+
+.art-desc-h1 {
+  /* margin-top: 250px; */
+  margin-bottom: 16px;
+
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.art-desc-p {
+  margin-bottom: 48px;
+
+  font: normal 16px/24px "Roboto", sans-serif;
+
+  text-align: left;
+}

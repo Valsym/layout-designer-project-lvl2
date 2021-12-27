@@ -12,9 +12,11 @@
 </head>
 
 <body>
-	<header id="page-description" class="wrapper content header bg-img banner">
-		<div class="header-flex">
-			<div class="logo-flex mr-auto">
+	<header>
+		<!-- class="wrapper content">
+		header bg-img banner">-->
+		<div class="wrapper content header-flex">
+			<div class="logo-flex">
 				<img class="logo-img" src="images/logo.svg" alt="logo" />
 				<p class="logo-text">Music Box</p>
 			</div>
@@ -28,23 +30,25 @@
 			</nav>
 			<p class="find ml-auto">Поиск</p>
 		</div>
+	</header>
+	<section id="page-description" class="bg-img banner">
+		<!--wrapper content  -->
 		<h1>Онлайн музыка где угодно</h1>
 		<h2>без ограничений</h2>
-		<form action="" class="form">
-			<p class="form-text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
-			</p>
-			<div class="form-flex">
-				<p class="mb-15 mr-24">
-					<input class="form-input" type="text" placeholder="Имя">
+		<form action="" class="form">
+			<div class="form-div">
+				<p class="form-text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир
+					музыки
 				</p>
-				<p class="mb-15">
-					<input class="form-input" type="email" placeholder="Email">
-				</p>
+				<div class="form-flex">
+						<input class="form-input" type="text" placeholder="Имя">
+						<input class="form-input" type="email" placeholder="Email">
+				</div>
+				<button type="submit" class="btn btn-green">Получить доступ</button>
 			</div>
-			<button type="submit" class="btn btn-green">Получить доступ</button>
 		</form>
+	</section>
 
-	</header>
 	<main>
 		<section id="page-pricing" class="wrapper content">
 			<h2 class="mb-45 ta-center">Формы подписки</h2>
