@@ -49,7 +49,7 @@
   text-align: center;
 
   @media screen and (max-width: $breakpoint) {
-    font-weight: 400px;
+    font: normal 16px/24px "Roboto", sans-serif;
   }
 }
 
