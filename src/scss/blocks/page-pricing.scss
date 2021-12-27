@@ -47,6 +47,10 @@
 
 .card-h3 {
   text-align: center;
+
+  @media screen and (max-width: $breakpoint) {
+    font-weight: 400px;
+  }
 }
 
 @mixin subscribe_img {

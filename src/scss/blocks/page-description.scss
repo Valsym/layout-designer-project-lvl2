@@ -1,7 +1,10 @@
-#page-description {
-  /* position: relative;
-  max-width: 1200px; */
+header {
+  @media screen and (max-width: $breakpoint) {
+    margin-bottom: 16px;
+  }
+}
 
+#page-description {
   padding: 200px 0;
 
   text-align: center;
@@ -11,7 +14,7 @@
   }
 
   @media screen and (max-width: $breakpoint) {
-    padding: 200px 20px;
+    padding: 250px 20px 200px 20px;
 
     h2 {
       margin-bottom: 16px;
@@ -30,17 +33,15 @@
 }
 
 .form {
-  display: flex;
-  justify-content: center;
-
-  /* max-width: 570px; */
+  max-width: 570px;
 
   color: $white;
   font: 16px/24px "Roboto", sans-serif;
 }
 
 .form-div {
-  max-width: 570px;
+  display: flex;
+  justify-content: center;
 
   p {
     margin-bottom: 16px;
@@ -76,26 +77,13 @@
   color: $white;
 
   background: transparent;
-
-  /*  &::placeholder {
-    color: $white;
-    font: 14px/16.4px "Roboto Bold", sans-serif;
-  } */
 }
 
-/* input::placeholder {
-  color: $white;
-  font: 14px/16.4px "Roboto Bold", sans-serif;
-} */
-
 @media screen and (max-width: $breakpoint) {
-  .header-flex {
-    right: 25px;
-    left: 25px;
-  }
-
   .logo-flex {
     width: 100%;
+
+    margin-bottom: 17px;
   }
 
   .logo-text {
@@ -107,6 +95,14 @@
     padding-inline-start: 0;
 
     text-align: left;
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    li:last-child {
+      margin-bottom: 18px;
+    }
   }
 
   .find {

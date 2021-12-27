@@ -354,9 +354,13 @@ nav ul li a {
   background: #3c3b3d;
 }
 
+@media screen and (max-width: 414px) {
+  header {
+    margin-bottom: 16px;
+  }
+}
+
 #page-description {
-  /* position: relative;
-  max-width: 1200px; */
   padding: 200px 0;
   text-align: center;
 }
@@ -365,7 +369,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   #page-description {
-    padding: 200px 20px;
+    padding: 250px 20px 200px 20px;
   }
   #page-description h2 {
     margin-bottom: 16px;
@@ -382,15 +386,14 @@ nav ul li a {
 }
 
 .form {
-  display: flex;
-  justify-content: center;
-  /* max-width: 570px; */
+  max-width: 570px;
   color: #fff;
   font: 16px/24px "Roboto", sans-serif;
 }
 
 .form-div {
-  max-width: 570px;
+  display: flex;
+  justify-content: center;
 }
 .form-div p {
   margin-bottom: 16px;
@@ -420,24 +423,12 @@ nav ul li a {
   border-radius: 3px;
   color: #fff;
   background: transparent;
-  /*  &::placeholder {
-    color: $white;
-    font: 14px/16.4px "Roboto Bold", sans-serif;
-  } */
 }
 
-/* input::placeholder {
-  color: $white;
-  font: 14px/16.4px "Roboto Bold", sans-serif;
-} */
 @media screen and (max-width: 414px) {
-  .header-flex {
-    right: 25px;
-    left: 25px;
-  }
-
   .logo-flex {
     width: 100%;
+    margin-bottom: 17px;
   }
 
   .logo-text {
@@ -448,6 +439,12 @@ nav ul li a {
     display: block;
     padding-inline-start: 0;
     text-align: left;
+  }
+  .ul-flex li {
+    margin-bottom: 3px;
+  }
+  .ul-flex li:last-child {
+    margin-bottom: 18px;
   }
 
   .find {
@@ -543,6 +540,11 @@ nav ul li a {
 
 .card-h3 {
   text-align: center;
+}
+@media screen and (max-width: 414px) {
+  .card-h3 {
+    font-weight: 400px;
+  }
 }
 
 .subscribe_1 {
