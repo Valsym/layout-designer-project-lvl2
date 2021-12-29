@@ -19,13 +19,28 @@
   display: flex;
   flex-direction: row;
 
+  div {
+    max-width: 600px;
+    margin-right: 144px;
+  }
+
   img {
     width: 333px;
     height: 278px;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: $breakpoint) {
     flex-direction: column-reverse;
+
+    .page-app-text {
+      margin-top: 16px;
+      padding-top: 0;
+    }
+
+    div {
+      margin-right: 0;
+    }
   }
 }
 

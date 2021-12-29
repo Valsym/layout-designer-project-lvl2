@@ -5,85 +5,95 @@ footer {
 
   color: $light;
 
-  & .footer-up {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 0 73px;
-
-    @media screen and (max-width: $breakpoint) {
-      flex-direction: column;
-
-      /* h2 {
-        :not(:first-child)
-        margin-top: 30px;
-      } */
-    }
-
-    .footer-up-item {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      max-width: 270px;
-
-      h2 {
-        margin-top: 30px;
-        margin-bottom: 15px;
-
-        color: $white;
-
-        font: bold 18px/27px "Roboto Bold", sans-serif;
-        text-transform: uppercase;
-      }
-
-      a,
-      p {
-        color: $light;
-        font: normal 16px/24px "Roboto", sans-serif;
-        text-decoration: none;
-      }
-    }
-
-    .footer-icon {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      max-width: 270px;
-    }
-  }
-
   hr {
     border: 1px solid $grey;
   }
 
-  & .footer-down {
-    margin-right: 16px;
-    padding: 40px 0 50px;
+  ul > li {
+    list-style: none;
+  }
+}
 
-    color: $light;
+.footer-up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-bottom: 73px;
 
-    ul {
-      display: flex;
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column;
+  }
+
+  .footer-up-item {
+    /* display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
-      padding-left: 0;
+      align-items: flex-start; */
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
 
       @media screen and (max-width: $breakpoint) {
-        flex-direction: column;
+        margin-right: 0;
       }
     }
 
-    ul > li {
-      list-style: none;
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
     }
 
-    ul > li:not(:last-child) {
-      margin-right: 16px;
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
 
-      @media screen and (max-width: $breakpoint) {
-        margin-bottom: 16px;
-      }
+      color: $white;
+
+      font: bold 18px/27px "Roboto Bold", sans-serif;
+      text-transform: uppercase;
+    }
+
+    a,
+    p {
+      color: $light;
+      font: normal 16px/24px "Roboto", sans-serif;
+      text-decoration: none;
+    }
+  }
+
+  .footer-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    max-width: 270px;
+  }
+}
+
+.footer-down {
+  margin-right: 16px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  color: $light;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    @media screen and (max-width: $breakpoint) {
+      flex-direction: column;
+    }
+  }
+
+  ul > li:not(:last-child) {
+    margin-right: 16px;
+
+    @media screen and (max-width: $breakpoint) {
+      margin-right: 0;
+      margin-bottom: 16px;
     }
   }
 }

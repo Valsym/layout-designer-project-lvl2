@@ -27,6 +27,8 @@
 }
 
 .news-text-block {
+  flex-basis: 50%;
+
   @media screen and (max-width: $breakpoint) {
     margin-top: 50px;
   }
@@ -57,9 +59,9 @@
 }
 
 .news-img {
+  flex-basis: 50%;
   max-width: 575px;
   max-height: 286px;
-  margin-right: 50px;
 
   img {
     width: 100%;
@@ -70,6 +72,7 @@
     max-width: 374px;
     height: 186px;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -92,6 +95,8 @@
 }
 
 .btn-news {
+  display: inline-block;
+  width: unset;
   padding: 16px 30px;
 
   color: $grey;
