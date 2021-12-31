@@ -32,7 +32,8 @@
   img {
     width: 333px;
     height: 278px;
-    margin: 0 auto;
+
+    /* margin: 0 auto; */
   }
 
   @media screen and (max-width: $breakpoint) {

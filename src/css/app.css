@@ -395,7 +395,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .banner {
-    height: 850px;
+    height: 853px;
   }
 }
 
@@ -462,7 +462,7 @@ nav ul li a {
     } */
   }
   .ul-flex li:last-child {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
 
   .find {
@@ -546,6 +546,7 @@ nav ul li a {
 @media screen and (max-width: 414px) {
   .pricing-item {
     margin-right: 0;
+    padding-top: 16px;
   }
   .pricing-item:not(:last-child) {
     margin-bottom: 27px;
@@ -656,7 +657,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .news-text-block {
-    margin-top: 43px;
+    margin-top: 37px;
   }
 }
 
@@ -1045,7 +1046,7 @@ footer ul > li {
 .app-flex img {
   width: 333px;
   height: 278px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 @media screen and (max-width: 414px) {
   .app-flex {
