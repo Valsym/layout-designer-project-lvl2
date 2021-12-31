@@ -457,9 +457,9 @@ nav ul li a {
     display: block;
     padding-inline-start: 0;
     text-align: left;
-  }
-  .ul-flex li {
-    padding-bottom: 3px;
+    /* li {
+      padding-bottom: 3px;
+    } */
   }
   .ul-flex li:last-child {
     margin-bottom: 18px;
@@ -537,8 +537,10 @@ nav ul li a {
   max-width: 371px;
   /* height: 615px; */
   padding-top: 24px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 26px;
+  /* 1.5rem; */
+  padding-left: 24px;
+  /* 1.5rem; */
   border-radius: 1rem;
 }
 @media screen and (max-width: 414px) {
@@ -559,6 +561,7 @@ nav ul li a {
 }
 
 .card-h3 {
+  margin-top: 3px;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
@@ -605,6 +608,11 @@ nav ul li a {
   font: normal 13px/19px "Roboto", sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 414px) {
+  .pricing-footer {
+    margin: 64px 0 86px 0;
+  }
+}
 
 .text-pricing-footer {
   margin-top: 43px;
@@ -613,7 +621,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .text-pricing-footer {
-    margin-top: 16px;
+    margin-top: 19px;
   }
 }
 
@@ -639,6 +647,7 @@ nav ul li a {
 @media screen and (max-width: 414px) {
   .news-item {
     flex-direction: column;
+    height: 500px;
   }
 }
 
@@ -647,7 +656,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .news-text-block {
-    margin-top: 50px;
+    margin-top: 43px;
   }
 }
 
@@ -690,7 +699,7 @@ nav ul li a {
   }
   .news-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -898,6 +907,7 @@ footer hr {
   border: 1px solid #cacaca;
 }
 footer ul > li {
+  font: normal 16px/24px "Roboto", sans-serif;
   list-style: none;
 }
 
@@ -935,7 +945,7 @@ footer ul > li {
 }
 .footer-up .footer-up-item h2 {
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   color: #fff;
   font: bold 18px/27px "Roboto Bold", sans-serif;
   text-transform: uppercase;
@@ -1019,6 +1029,11 @@ footer ul > li {
 }
 
 /* page-app */
+#page-app {
+  max-width: 1240px;
+  padding-top: 100px;
+}
+
 .app-flex {
   display: flex;
   flex-direction: row;
@@ -1039,6 +1054,9 @@ footer ul > li {
   .app-flex .page-app-text {
     margin-top: 16px;
     padding-top: 0;
+  }
+  .app-flex .page-app-text p:first-child {
+    margin-bottom: 16px;
   }
   .app-flex div {
     margin-right: 0;

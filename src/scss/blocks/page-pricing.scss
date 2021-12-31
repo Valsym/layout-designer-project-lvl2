@@ -28,8 +28,8 @@
 
   /* height: 615px; */
   padding-top: 24px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 26px; /* 1.5rem; */
+  padding-left: 24px; /* 1.5rem; */
   border-radius: 1rem;
 
   @media screen and (max-width: $breakpoint) {
@@ -50,6 +50,8 @@
 }
 
 .card-h3 {
+  margin-top: 3px;
+
   text-align: center;
 
   @media screen and (max-width: $breakpoint) {
@@ -100,6 +102,10 @@
   font: normal 13px/19px "Roboto", sans-serif;
 
   text-align: center;
+
+  @media screen and (max-width: $breakpoint) {
+    margin: 64px 0 86px 0;
+  }
 }
 
 .text-pricing-footer {
@@ -110,6 +116,6 @@
   text-align: center;
 
   @media screen and (max-width: $breakpoint) {
-    margin-top: 16px;
+    margin-top: 19px;
   }
 }

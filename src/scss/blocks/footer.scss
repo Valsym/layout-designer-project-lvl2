@@ -10,6 +10,8 @@ footer {
   }
 
   ul > li {
+    font: normal 16px/24px "Roboto", sans-serif;
+
     list-style: none;
   }
 }
@@ -46,7 +48,7 @@ footer {
 
     h2 {
       margin-top: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
 
       color: $white;
 
