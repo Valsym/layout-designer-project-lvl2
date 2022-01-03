@@ -32,6 +32,12 @@
   height: 25px; */
 
   font: 11px/16.5px "Roboto", sans-serif;
+
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column;
+    align-content: start;
+    align-items: start;
+  }
 }
 
 .logo-flex {
@@ -59,6 +65,45 @@
   align-content: center;
 }
 
+@media screen and (max-width: $breakpoint) {
+  .logo-flex {
+    /* width: 100%; */
+    max-width: fit-content;
+
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+
+  .logo-text {
+    margin-right: auto;
+  }
+
+  .ul-flex {
+    display: block;
+    margin-right: 0;
+    padding-inline-start: 0;
+
+    padding: 2px 0;
+
+    font: normal 11px/13px "Roboto", sans-serif;
+
+    text-align: left;
+
+    li:not(:last-child) {
+      padding-bottom: 3px;
+    }
+  }
+
+  .find {
+    max-width: unset;
+    margin-top: 14px;
+  }
+
+  nav {
+    width: fit-content;
+  }
+}
+
 nav {
   ul {
     text-transform: uppercase;
@@ -67,6 +112,10 @@ nav {
 
     li {
       margin-right: 24px;
+
+      @media screen and (max-width: $breakpoint) {
+        margin-right: 0;
+      }
     }
 
     li a {
@@ -84,8 +133,7 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  min-width: 50px;
-  max-width: 248px;
+  min-width: 248px;
   height: 25px;
 
   padding-right: 10px;
@@ -95,6 +143,7 @@ nav {
 
   color: $darkGrey;
 
+  font: 13.3px/15px "Roboto", sans-serif;
   text-align: left;
   text-transform: uppercase;
 

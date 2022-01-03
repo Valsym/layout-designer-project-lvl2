@@ -36,7 +36,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 73px;
 
   @media screen and (max-width: $breakpoint) {
@@ -72,10 +72,6 @@ footer {
 
       font: bold 18px/27px "Roboto Bold", sans-serif;
       text-transform: uppercase;
-
-      @media screen and (max-width: $breakpoint) {
-        margin-top: 33px;
-      }
     }
 
     a,

@@ -303,6 +303,13 @@ p {
   height: 25px; */
   font: 11px/16.5px "Roboto", sans-serif;
 }
+@media screen and (max-width: 414px) {
+  .header-flex {
+    flex-direction: column;
+    align-content: start;
+    align-items: start;
+  }
+}
 
 .logo-flex {
   display: flex;
@@ -328,12 +335,50 @@ p {
   align-content: center;
 }
 
+@media screen and (max-width: 414px) {
+  .logo-flex {
+    /* width: 100%; */
+    max-width: fit-content;
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+
+  .logo-text {
+    margin-right: auto;
+  }
+
+  .ul-flex {
+    display: block;
+    margin-right: 0;
+    padding-inline-start: 0;
+    padding: 2px 0;
+    font: normal 11px/13px "Roboto", sans-serif;
+    text-align: left;
+  }
+  .ul-flex li:not(:last-child) {
+    padding-bottom: 3px;
+  }
+
+  .find {
+    max-width: unset;
+    margin-top: 14px;
+  }
+
+  nav {
+    width: fit-content;
+  }
+}
 nav ul {
   text-transform: uppercase;
   list-style: none;
 }
 nav ul li {
   margin-right: 24px;
+}
+@media screen and (max-width: 414px) {
+  nav ul li {
+    margin-right: 0;
+  }
 }
 nav ul li a {
   color: #cacaca;
@@ -348,13 +393,13 @@ nav ul li a {
   display: flex;
   align-items: center;
   width: 100%;
-  min-width: 50px;
-  max-width: 248px;
+  min-width: 248px;
   height: 25px;
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 50px;
   color: #757575;
+  font: 13.3px/15px "Roboto", sans-serif;
   text-align: left;
   text-transform: uppercase;
   background: #3c3b3d;
@@ -444,34 +489,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 414px) {
-  .logo-flex {
-    width: 100%;
-    margin-bottom: 17px;
-  }
-
-  .logo-text {
-    margin-right: auto;
-  }
-
-  .ul-flex {
-    display: block;
-    padding-inline-start: 0;
-    padding: 2px 0;
-    font: normal 11px/13px "Roboto", sans-serif;
-    text-align: left;
-    /* li {
-      padding-bottom: 3px;
-    } */
-  }
-  .ul-flex li:not(:last-child) {
-    padding-bottom: 3px;
-  }
-
-  .find {
-    max-width: unset;
-    margin-top: 14px;
-  }
-
   .form-flex {
     display: block;
     width: 100%;
@@ -651,7 +668,7 @@ nav ul li a {
 @media screen and (max-width: 414px) {
   .news-item {
     flex-direction: column;
-    height: 452px;
+    height: 500px;
   }
 }
 
@@ -660,7 +677,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .news-text-block {
-    margin-top: 37px;
+    margin-top: 53px;
   }
 }
 
@@ -932,7 +949,7 @@ footer ul > li {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 73px;
 }
 @media screen and (max-width: 414px) {
@@ -968,11 +985,6 @@ footer ul > li {
   color: #fff;
   font: bold 18px/27px "Roboto Bold", sans-serif;
   text-transform: uppercase;
-}
-@media screen and (max-width: 414px) {
-  .footer-up .footer-up-item h2 {
-    margin-top: 33px;
-  }
 }
 .footer-up .footer-up-item a,
 .footer-up .footer-up-item p {
