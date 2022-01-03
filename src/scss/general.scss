@@ -122,12 +122,13 @@ p {
 .btn {
   width: 100%;
   max-width: 570px;
+  min-height: 57px;
   padding: 20px 30px;
   border: none;
   border-radius: 5px;
 
   color: $white;
-  font: normal 13px/15px "Roboto", sans-serif;
+  font: normal 13.3px/15px "Roboto", sans-serif;
   text-transform: uppercase;
 }
 

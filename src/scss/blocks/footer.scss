@@ -17,6 +17,7 @@ footer {
 
   @media screen and (max-width: $breakpoint) {
     .femail {
+      max-width: fit-content;
       max-height: 20px;
       margin-bottom: 3px;
     }
@@ -27,6 +28,7 @@ footer {
     }
 
     .phone {
+      max-width: fit-content;
       max-height: 20px;
     }
   }
@@ -41,15 +43,11 @@ footer {
 
   @media screen and (max-width: $breakpoint) {
     flex-direction: column;
-    padding-top: 29px;
+    padding-top: 62px;
     padding-bottom: 70px;
   }
 
   .footer-up-item {
-    /* display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: flex-start; */
     width: 270px;
 
     &:not(:last-child) {
@@ -57,11 +55,14 @@ footer {
 
       @media screen and (max-width: $breakpoint) {
         margin-right: 0;
+        margin-bottom: 30px;
       }
     }
 
-    @media screen and (max-width: $breakpoint) {
-      width: 100%;
+    &:last-child {
+      @media screen and (max-width: $breakpoint) {
+        margin-top: 3px;
+      }
     }
 
     h2 {
@@ -72,6 +73,14 @@ footer {
 
       font: bold 18px/27px "Roboto Bold", sans-serif;
       text-transform: uppercase;
+    }
+
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
+
+      h2 {
+        margin-top: 0;
+      }
     }
 
     a,
