@@ -109,19 +109,24 @@
     display: block;
     padding-inline-start: 0;
 
+    padding: 2px 0;
+
+    font: normal 11px/13px "Roboto", sans-serif;
+
     text-align: left;
 
     /* li {
       padding-bottom: 3px;
     } */
 
-    li:last-child {
-      margin-bottom: 14px;
+    li:not(:last-child) {
+      padding-bottom: 3px;
     }
   }
 
   .find {
     max-width: unset;
+    margin-top: 14px;
   }
 
   .form-flex {

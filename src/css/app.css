@@ -312,8 +312,8 @@ p {
 }
 
 .logo-img {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -456,17 +456,20 @@ nav ul li a {
   .ul-flex {
     display: block;
     padding-inline-start: 0;
+    padding: 2px 0;
+    font: normal 11px/13px "Roboto", sans-serif;
     text-align: left;
     /* li {
       padding-bottom: 3px;
     } */
   }
-  .ul-flex li:last-child {
-    margin-bottom: 14px;
+  .ul-flex li:not(:last-child) {
+    padding-bottom: 3px;
   }
 
   .find {
     max-width: unset;
+    margin-top: 14px;
   }
 
   .form-flex {
@@ -648,7 +651,7 @@ nav ul li a {
 @media screen and (max-width: 414px) {
   .news-item {
     flex-direction: column;
-    height: 500px;
+    height: 452px;
   }
 }
 
@@ -911,6 +914,19 @@ footer ul > li {
   font: normal 16px/24px "Roboto", sans-serif;
   list-style: none;
 }
+@media screen and (max-width: 414px) {
+  footer .femail {
+    max-height: 20px;
+    margin-bottom: 3px;
+  }
+  footer .adress {
+    max-height: 24px;
+    margin-bottom: 2px;
+  }
+  footer .phone {
+    max-height: 20px;
+  }
+}
 
 .footer-up {
   display: flex;
@@ -922,6 +938,8 @@ footer ul > li {
 @media screen and (max-width: 414px) {
   .footer-up {
     flex-direction: column;
+    padding-top: 29px;
+    padding-bottom: 70px;
   }
 }
 .footer-up .footer-up-item {
@@ -951,6 +969,11 @@ footer ul > li {
   font: bold 18px/27px "Roboto Bold", sans-serif;
   text-transform: uppercase;
 }
+@media screen and (max-width: 414px) {
+  .footer-up .footer-up-item h2 {
+    margin-top: 33px;
+  }
+}
 .footer-up .footer-up-item a,
 .footer-up .footer-up-item p {
   color: #e0e0e0;
@@ -961,14 +984,15 @@ footer ul > li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: center;
   max-width: 270px;
+  height: 24px;
 }
 
 .footer-down {
   /* margin-right: 16px; */
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   color: #e0e0e0;
 }
 .footer-down ul {
