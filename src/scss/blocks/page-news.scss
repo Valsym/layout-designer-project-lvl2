@@ -95,6 +95,10 @@
   align-items: center;
   margin-bottom: 48px;
 
+  @media screen and (max-width: $breakpoint) {
+    margin-bottom: 46px;
+  }
+
   span {
     margin-right: 16px;
   }

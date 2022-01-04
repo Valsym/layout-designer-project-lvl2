@@ -358,7 +358,7 @@ p {
     display: block;
     margin-right: 0;
     padding-inline-start: 0;
-    padding: 2px 0;
+    /* padding: 2px 0; */
     font: normal 11px/13px "Roboto", sans-serif;
     text-align: left;
   }
@@ -447,7 +447,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .banner {
-    height: 850px;
+    height: 853px;
   }
 }
 
@@ -747,6 +747,11 @@ nav ul li a {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+}
+@media screen and (max-width: 414px) {
+  .news-author {
+    margin-bottom: 46px;
+  }
 }
 .news-author span {
   margin-right: 16px;
