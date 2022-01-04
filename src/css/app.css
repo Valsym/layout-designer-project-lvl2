@@ -399,7 +399,6 @@ nav ul li a {
 .find {
   display: flex;
   align-items: center;
-  width: 100%;
   min-width: 248px;
   height: 25px;
   padding-right: 10px;
@@ -410,6 +409,11 @@ nav ul li a {
   text-align: left;
   text-transform: uppercase;
   background: #3c3b3d;
+}
+@media screen and (max-width: 414px) {
+  .find {
+    width: 100%;
+  }
 }
 
 /* header {
@@ -429,7 +433,7 @@ nav ul li a {
     padding: 200px 0;
   }
   #page-description h1 {
-    margin-top: 50px;
+    margin-top: 48px;
   }
   #page-description h2 {
     margin-bottom: 16px;
@@ -750,7 +754,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .news-author {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 }
 .news-author span {
