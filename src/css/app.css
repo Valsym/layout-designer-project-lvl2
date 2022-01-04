@@ -121,6 +121,11 @@ p {
   font: normal 13.3px/15px "Roboto", sans-serif;
   text-transform: uppercase;
 }
+@media screen and (max-width: 414px) {
+  .btn {
+    font-family: Arial, sans-serif;
+  }
+}
 
 .btn-art {
   display: flex;
@@ -346,6 +351,7 @@ p {
 
   .logo-text {
     margin-right: auto;
+    font: 11px/13px "Roboto", sans-serif;
   }
 
   .ul-flex {
@@ -441,7 +447,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .banner {
-    height: 853px;
+    height: 850px;
   }
 }
 
@@ -472,6 +478,11 @@ nav ul li a {
 }
 .form-flex input:first-child {
   margin-right: 24px;
+}
+@media screen and (max-width: 414px) {
+  .form-flex input:first-child {
+    margin-right: 0;
+  }
 }
 .form-flex input::placeholder {
   color: #fff;
@@ -669,7 +680,7 @@ nav ul li a {
 @media screen and (max-width: 414px) {
   .news-item {
     flex-direction: column;
-    height: 500px;
+    height: 490px;
   }
 }
 

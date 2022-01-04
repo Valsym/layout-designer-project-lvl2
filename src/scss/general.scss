@@ -130,6 +130,10 @@ p {
   color: $white;
   font: normal 13.3px/15px "Roboto", sans-serif;
   text-transform: uppercase;
+
+  @media screen and (max-width: $breakpoint) {
+    font-family: Arial, sans-serif;
+  }
 }
 
 .btn-art {
