@@ -672,6 +672,11 @@ nav ul li a {
   font-weight: 700;
 }
 @media screen and (max-width: 414px) {
+  #page-news {
+    width: 100%;
+    height: 1239px;
+    margin-top: 8px;
+  }
   #page-news h2 {
     font: bold 18px/27px "Roboto Bold", sans-serif;
   }
@@ -754,7 +759,7 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .news-author {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 }
 .news-author span {

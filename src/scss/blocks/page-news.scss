@@ -11,6 +11,10 @@
   }
 
   @media screen and (max-width: $breakpoint) {
+    width: 100%;
+    height: 1239px;
+    margin-top: 8px;
+
     h2 {
       font: bold 18px/27px "Roboto Bold", sans-serif;
     }
@@ -96,7 +100,7 @@
   margin-bottom: 48px;
 
   @media screen and (max-width: $breakpoint) {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   span {
