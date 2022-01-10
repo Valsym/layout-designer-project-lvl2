@@ -1,4 +1,6 @@
 #page-discography {
+  max-width: 1240px;
+
   @media screen and (max-width: $breakpoint) {
     h2 {
       font: bold 18px/27px "Roboto Bold", sans-serif;
@@ -45,8 +47,25 @@
     text-align: left;
   }
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  /* &:not(:last-child) {} */
+  margin-right: 50px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.discography-info {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.not-mb {
+  margin-bottom: 0;
+
+  @media screen and (max-width: $breakpoint) {
     margin-bottom: 25px;
   }
 }

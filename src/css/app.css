@@ -416,14 +416,12 @@ nav ul li a {
   }
 }
 
-/* header {
-  @media screen and (max-width: $breakpoint) {
-    margin-bottom: 16px;
-  }
-} */
 #page-description {
   padding: 200px 0;
   text-align: center;
+}
+#page-description .art-pad {
+  padding: 50px 0 63px;
 }
 #page-description h2 {
   margin-bottom: 31px;
@@ -525,7 +523,15 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  /* padding-bottom: 223px; */
+}
+.art-button-flex .btn-art {
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 414px) {
+  .art-button-flex .btn-art {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .art-icon {
@@ -782,7 +788,6 @@ nav ul li a {
 
 #page-popular-track {
   max-width: 1240px;
-  padding-top: 100px;
   color: #fff;
   background: #08020d;
 }
@@ -838,17 +843,21 @@ nav ul li a {
 }
 
 .track-info {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-start; */
 }
 .track-info h3 {
   color: #fff;
   font: bold 12.8px/19.2px "Roboto Bold", sans-serif;
+  text-align: left;
   /* text-transform: capitalize; */
 }
 
+#page-discography {
+  max-width: 1240px;
+}
 @media screen and (max-width: 414px) {
   #page-discography h2 {
     font: bold 18px/27px "Roboto Bold", sans-serif;
@@ -870,6 +879,11 @@ nav ul li a {
   margin-right: 50px;
 }
 
+.discography-item {
+  /* &:not(:last-child) {} */
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
 .discography-item img {
   width: 250px;
   height: 250px;
@@ -890,9 +904,23 @@ nav ul li a {
   font: normal 16px/24px "Roboto", sans-serif;
   text-align: left;
 }
-.discography-item:not(:last-child) {
-  margin-right: 50px;
-  margin-bottom: 25px;
+.discography-item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.discography-info {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.not-mb {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 414px) {
+  .not-mb {
+    margin-bottom: 25px;
+  }
 }
 
 #page-similar {
