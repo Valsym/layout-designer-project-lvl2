@@ -195,6 +195,10 @@ p {
   width: 15px;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-45 {
   margin-bottom: 45px;
 }
@@ -423,6 +427,12 @@ nav ul li a {
 #page-description .art-pad {
   padding: 50px 0 63px;
 }
+@media screen and (max-width: 414px) {
+  #page-description .art-pad {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
 #page-description h2 {
   margin-bottom: 31px;
 }
@@ -431,7 +441,7 @@ nav ul li a {
     padding: 200px 0;
   }
   #page-description h1 {
-    margin-top: 48px;
+    margin-top: 0;
   }
   #page-description h2 {
     margin-bottom: 16px;
@@ -529,8 +539,12 @@ nav ul li a {
 }
 @media screen and (max-width: 414px) {
   .art-button-flex .btn-art {
+    height: 60px;
     margin-right: 0;
     margin-bottom: 25px;
+  }
+  .art-button-flex .btn-art:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -913,6 +927,11 @@ nav ul li a {
   margin-top: 10px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 414px) {
+  .discography-info {
+    width: 137px;
+  }
+}
 
 .not-mb {
   margin-bottom: 0;
@@ -944,9 +963,27 @@ nav ul li a {
   justify-content: start;
 }
 .similar-two-items:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 48px;
+}
+@media screen and (max-width: 414px) {
+  .similar-two-items:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .similar-two-items {
+    margin-right: 0;
+  }
 }
 
+.similar-item {
+  /* &:not(:last-child) {} */
+  margin-right: 48px;
+  margin-bottom: 25px;
+  /* @media screen and (max-width: $breakpoint) {
+    margin-right: 25px;
+  } */
+}
 .similar-item img {
   width: 250px;
   height: 250px;
@@ -967,9 +1004,10 @@ nav ul li a {
   font: normal 16px/24px "Roboto", sans-serif;
   text-align: center;
 }
-.similar-item:not(:last-child) {
-  margin-right: 50px;
-  margin-bottom: 25px;
+.similar-item .similar-info {
+  width: 137px;
+  height: 75px;
+  margin-top: 11px;
 }
 
 /* no components */

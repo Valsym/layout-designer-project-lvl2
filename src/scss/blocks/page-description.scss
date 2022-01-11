@@ -5,6 +5,11 @@
 
   .art-pad {
     padding: 50px 0 63px;
+
+    @media screen and (max-width: $breakpoint) {
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
   }
 
   h2 {
@@ -15,7 +20,7 @@
     padding: 200px 0;
 
     h1 {
-      margin-top: 48px;
+      margin-top: 0;
     }
 
     h2 {
@@ -123,8 +128,13 @@
     margin-right: 1.5rem;
 
     @media screen and (max-width: $breakpoint) {
+      height: 60px;
       margin-right: 0;
       margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

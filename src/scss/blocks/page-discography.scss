@@ -60,6 +60,10 @@
 .discography-info {
   margin-top: 10px;
   margin-bottom: 0;
+
+  @media screen and (max-width: $breakpoint) {
+    width: 137px;
+  }
 }
 
 .not-mb {

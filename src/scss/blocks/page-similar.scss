@@ -20,7 +20,15 @@
   justify-content: start;
 
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 48px;
+
+    @media screen and (max-width: $breakpoint) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    margin-right: 0;
   }
 }
 
@@ -47,8 +55,17 @@
     text-align: center;
   }
 
-  &:not(:last-child) {
-    margin-right: 50px;
-    margin-bottom: 25px;
+  .similar-info {
+    width: 137px;
+    height: 75px;
+    margin-top: 11px;
   }
+
+  /* &:not(:last-child) {} */
+  margin-right: 48px;
+  margin-bottom: 25px;
+
+  /* @media screen and (max-width: $breakpoint) {
+    margin-right: 25px;
+  } */
 }
